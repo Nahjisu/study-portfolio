@@ -1,0 +1,50 @@
+body {
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+/* Navbar */
+#navbar {
+  display: flex;
+  padding: 16px;
+  justify-content: space-between;
+  background: url(imgs/cool-background2.png);
+}
+
+.navbar__menu {
+  display: flex;
+}
+
+.navbar__menu__item {
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+.navbar__menu__item:hover {
+  color: #dbdbdb;
+}
+
+/* Home */
+#home {
+  background: url(imgs/cool-background.png);
+  padding: 8px 12px;
+  text-align: center;
+}
+
+.home__button {
+  padding: 8px 12px;
+}
+
+.home__button__item {
+  width: 100px;
+  height: 40px;
+  cursor: pointer;
+  border: 2px solid black;
+  outline: none;
+  font-size: small;
+  font-weight: bold;
+  border-radius: 4px;
+}
