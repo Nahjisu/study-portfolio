@@ -4,6 +4,19 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant:wght@300&display=swap"
+      rel="stylesheet"
+    />
     <title>Document</title>
   </head>
   <body>
@@ -25,6 +38,7 @@
     </nav>
     <!-- Home -->
     <section id="home">
+      <img id="home__img" src="/imgs/IMG_1057.JPG" alt="" />
       <h1>
         Hello <br />
         I'm NAH JISOO
@@ -35,9 +49,55 @@
       </div>
     </section>
     <!-- About -->
-    <section id="about"></section>
+    <section id="about">
+      <div class="about__title">
+        <i class="fas fa-user"></i>
+        <h1>About</h1>
+      </div>
+      <div class="about__items">
+        <span class="about__item"
+          ><h3>Name</h3>
+          <br />
+          NAH JISOO
+        </span>
+        <span class="about__item"
+          ><h3>Birth</h3>
+          <br />
+          1992.01.22</span
+        >
+        <span class="about__item"
+          ><h3>Address</h3>
+          <br />
+          Nerima Ku, Tokyo To</span
+        >
+        <span class="about__item"
+          ><h3>Email</h3>
+          <br />
+          najisu0122@gmail.com</span
+        >
+      </div>
+    </section>
     <!-- Skills -->
-    <section id="skills"></section>
+    <section id="skills">
+      <div class="skills__title">
+        <i class="fas fa-tools"></i>
+        <h1>Skills</h1>
+        <p>This is the description of the skill and the framework used</p>
+      </div>
+      <div class="skills__items">
+        <div class="skills__left">
+          <label for="">Java :</label>
+          <progress id="skill__java" max="100" value="70"></progress>
+          <br />
+          <label for="">Javascript</label>
+          <progress id="skill__java" max="100" value="80"></progress>
+          <br />
+          <label for="">Typescripte</label>
+          <progress id="skill__java" max="100" value="50"></progress>
+        </div>
+        <div class="skills__right"></div>
+      </div>
+    </section>
     <!-- Project -->
     <section id="project"></section>
     <!-- Career -->
