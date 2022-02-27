@@ -17,6 +17,7 @@
       href="https://fonts.googleapis.com/css2?family=Cormorant:wght@300&display=swap"
       rel="stylesheet"
     />
+    <script src="main.js" defer></script>
     <title>Document</title>
   </head>
   <body>
@@ -27,12 +28,12 @@
       </div>
       <div class="navbar__menu">
         <ul class="navbar__menu">
-          <li class="navbar__menu__item">Home</li>
-          <li class="navbar__menu__item">About</li>
-          <li class="navbar__menu__item">Skills</li>
-          <li class="navbar__menu__item">Projects</li>
-          <li class="navbar__menu__item">Career</li>
-          <li class="navbar__menu__item">Contact</li>
+          <li class="navbar__menu__item" data-link="#home">Home</li>
+          <li class="navbar__menu__item" data-link="#about">About</li>
+          <li class="navbar__menu__item" data-link="#skills">Skills</li>
+          <li class="navbar__menu__item" data-link="#project">Projects</li>
+          <li class="navbar__menu__item" data-link="#career">Career</li>
+          <li class="navbar__menu__item" data-link="#contact">Contact</li>
         </ul>
       </div>
     </nav>
@@ -45,7 +46,7 @@
       </h1>
       <h2>Web developer portfolio</h2>
       <div class="home__button">
-        <button class="home__button__item">Contact Me</button>
+        <button class="home__button__item" data-link="#contact">Contact Me</button>
       </div>
     </section>
     <!-- About -->
@@ -142,7 +143,7 @@
             <span>40%</span>
           </div>
           <div class="skill__bar">
-            <div class="skill__value" style="width: 70%; background-color: skyblue"></div>
+            <div class="skill__value" style="width: 40%; background-color: skyblue"></div>
           </div>
         </div>
         <div class="skills__right">
@@ -164,20 +165,104 @@
     </section>
     <!-- Project -->
     <section id="project">
-      
       <div class="project__title">
       <i class="fa-solid fa-archway"></i>
       <h1>Project</h1>
       </div>
+      <div class="project__buttons">
+        <button class="project__btn" data-filter="*">All</button>
+        <button class="project__btn" data-filter="frontend">Frontend</button>
+        <button class="project__btn backend" data-filter="backend">Backend</button>
+      </div>
       <div class="project__items">
+        <a href="https://lucid-shannon-25badb.netlify.app/" class="project" target="blank" data-type="frontend">
+          <img class="project-img" src="./imgs/project/project5.png" alt="">
+          <div class="project__description">
+            <h3>Nuxt Shopping</h3>
+            <span>Clone Codding with Vue Nuxt.js</span>
+          </div>
+        </a>
+        <a href="https://nahjisu.github.io/Navbar/" class="project" target="blank" data-type="frontend">
+          <img class="project-img" src="./imgs/project/project2.png" alt="">
+          <div class="project__description">
+            <h3>Navbar</h3>
+            <span>Clone Codding with apple Navbar</span>
+          </div>
+        </a>
+        <a href="" class="project" target="blank" data-type="frontend">
+          <img class="project-img" src="./imgs/project/project3.png" alt="">
+          <div class="project__description">
+            <h3>React Project</h3>
+            <span>It's currently in progress</span>
+          </div>
+        </a>
+        <a href="" class="project" target="blank" data-type="backend">
+          <img class="project-img" src="./imgs/project/project4.png" alt="">
+          <div class="project__description">
+            <h3>Backend</h3>
+            <span>It's currently in progress</span>
+          </div>
+        </a>
+        <a href="" class="project" target="blank" data-type="backend">
+          <img class="project-img" src="./imgs/project/project4.png" alt="">
+          <div class="project__description">
+            <h3>Backend</h3>
+            <span>It's currently in progress</span>
+          </div>
+        </a>
 
       </div>
     </section>
     <!-- Career -->
     <section id="career">
-      
+      <div class="career__title">
+        <i class="fa-solid fa-building"></i>
+        <h1>Carrer</h1>
+      </div>
+      <div class="career_wrap">
+      <ul class="career__items__left">
+        <li class="carrer__item__left">
+          <i class="fa-solid fa-building"></i>
+          2018年05月～2018年11月 : 大手企業向け 人事管理システム
+        </li>
+        <li class="carrer__item__left">
+          <i class="fa-solid fa-building"></i> 
+          2018年12月～2019年04月 : 電力量測定システム</li>
+        <li class="carrer__item__left">
+          <i class="fa-solid fa-building"></i>
+          2019年05月～2020年03月 : 金融業向け クレジットカードシステム開発</li>
+        <li class="carrer__item__left">
+          <i class="fa-solid fa-building"></i>
+          2020年04月～2020年10月 : 学生向け 就職サイトを自社サービス</li>
+        <li class="carrer__item__left">
+          <i class="fa-solid fa-building"></i>
+          2020年11月～2021年12月 : 金融向け ローンシステム開発</li>
+        <li class="carrer__item__left">
+          <i class="fa-solid fa-building"></i>
+          2022年01月～現在 : インタネット動画広告配信用のプラットフォーム開発</li>
+      </ul>
+    </div>
     </section>
     <!-- Contact -->
-    <section id="contact"></section>
+    <section id="contact">
+      <h1 class="contact__title">Contact</h1>
+      <h2 class="contact__email">najisu0122@gmail.com</h2>
+      <div class="contact__link">
+        <a class="link__item" href="https://github.com/nahjisu" target="blank">
+          <i class="fa-brands fa-github"></i>
+        </a>
+        <a class="link__item" href="">
+          <i class="fa-brands fa-facebook"></i>
+        </a>
+        <a class="link__item" href="">
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+      </div>
+      <p class="contact__text">2022 Study Protfolio</p>
+    </section>
+    <!-- arrow button -->
+    <button class="arrow-up">
+      <i class="fa-solid fa-arrow-up" data-link="#home"></i>
+    </button>
   </body>
 </html>
